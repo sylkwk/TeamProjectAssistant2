@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/board">
+    <fragment
+        android:id="@+id/board"
+        android:name="com.example.teamprojectassistant2.Fragments.BoardFragment"
+        android:label="fragment_board"
+        tools:layout="@layout/fragment_board" />
+    <fragment
+        android:id="@+id/todo"
+        android:name="com.example.teamprojectassistant2.Fragments.TodoFragment"
+        android:label="fragment_todo"
+        tools:layout="@layout/fragment_todo" />
+    <fragment
+        android:id="@+id/ganttchart"
+        android:name="com.example.teamprojectassistant2.Fragments.GanttchartFragment"
+        android:label="fragment_ganttchart"
+        tools:layout="@layout/fragment_ganttchart" />
+</navigation>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 프로젝트 정보 입력 제목 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="프로젝트 정보 입력"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="과목:" />
+
+    <EditText
+        android:id="@+id/editText_SubjectName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="과목을 입력하세요"/>
+
+    <!-- 프로젝트 이름 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프로젝트 이름:" />
+
+    <EditText
+        android:id="@+id/editTextProjectName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="프로젝트 이름을 입력하세요"/>
+
+    <!-- 프로젝트 데드라인 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프로젝트 데드라인:" />
+
+    <EditText
+        android:id="@+id/editTextDeadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="데드라인을 입력하세요"/>
+
+    <!-- 팀원 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="팀원:" />
+
+    <LinearLayout
+        android:id="@+id/layoutTeamMembers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextTeamMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="팀원 이름을 입력하세요"/>
+
+    </LinearLayout>
+
+    <!-- 팀원 추가 버튼 -->
+    <Button
+        android:id="@+id/buttonAddTeamMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="팀원 추가"/>
+
+    <!-- 저장 버튼 -->
+    <Button
+        android:id="@+id/button_Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저장"/>
+
+</LinearLayout>
